@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "certs": "node certs.js $DOMAIN",
-    "serve": "sudo node server.js $DOMAIN $TARGET $PORT",
+    "serve": "sudo node server.js $TARGET $DOMAIN $PORT",
     "start": "npm run certs && npm run serve"
   },
   "author": "",
