@@ -1,0 +1,18 @@
+{
+  "name": "fake-ssl",
+  "version": "1.0.0",
+  "description": "Simple ssl server for local development",
+  "main": "certs.js",
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "certs": "node certs.js $DOMAIN",
+    "serve": "sudo node server.js $DOMAIN $TARGET $PORT",
+    "start": "npm run certs && npm run serve"
+  },
+  "author": "",
+  "license": "GPL-3.0-only"
+}
